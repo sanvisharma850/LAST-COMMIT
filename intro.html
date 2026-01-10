@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAST COMMIT</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <!-- Grain overlay -->
+    <div class="grain-overlay"></div>
+    
+    <!-- Blood vignette -->
+    <div class="blood-vignette"></div>
+
+    <!-- Main container -->
+    <div id="intro-container">
+        
+        <!-- SCENE 0: Black screen with opening text -->
+        <div class="scene active" id="scene-0">
+            <div class="typewriter-text">
+                <span class="typewriter">Systems don't forget. They just wait.</span>
+            </div>
+        </div>
+
+        <!-- SCENE 1: The Room -->
+        <div class="scene" id="scene-1">
+            <div class="room-image parallax-zoom"></div>
+            <div class="fragment-container">
+                <div class="fragment delay-1">1:40 AM</div>
+                <div class="fragment delay-2">Lights on</div>
+                <div class="fragment delay-3">Laptop open</div>
+                <div class="fragment delay-4">Heart stopped</div>
+            </div>
+            <div class="main-text delay-5">
+                Dr. Uday Goyal was alone.
+            </div>
+        </div>
+
+        <!-- SCENE 2: Systems Disagree -->
+        <div class="scene" id="scene-2">
+            <div class="split-screen">
+                <div class="split-left">
+                    <div class="medical-report">
+                        <div class="report-header">MEDICAL EXAMINER REPORT</div>
+                        <div class="report-content">
+                            <p>Patient: Dr. Uday Goyal</p>
+                            <p>Time of Death: 01:40 AM</p>
+                            <p class="cause-highlight">Cause: Cardiac Arrest</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-right">
+                    <div class="terminal">
+                        <div class="terminal-line">$ analyzing_vitals.log</div>
+                        <div class="terminal-line delay-1">$ cross_ref physiological_history</div>
+                        <div class="terminal-line delay-2 error-line">ERROR: EVENT DOES NOT MATCH PROFILE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="override-text">
+                <div class="glitch-text" data-text="The report said one thing.">The report said one thing.</div>
+                <div class="glitch-text delay-1" data-text="The systems said another.">The systems said another.</div>
+            </div>
+        </div>
+
+        <!-- SCENE 3: The Commit -->
+        <div class="scene" id="scene-3">
+            <div class="github-interface">
+                <div class="github-header">
+                    <span class="repo-name">uday-goyal / contingency</span>
+                    <span class="repo-status">● Public</span>
+                </div>
+                <div class="commit-info">
+                    <div class="commit-message typing-effect">final_cleanup</div>
+                    <div class="commit-meta">
+                        <span>committed at 01:12 AM</span>
+                        <span class="commit-hash">7a3f9e2</span>
+                    </div>
+                </div>
+                <div class="commit-description">
+                    <p class="fade-in delay-2">No documentation.</p>
+                    <p class="fade-in delay-3">No announcement.</p>
+                    <p class="fade-in delay-4">Just a contingency.</p>
+                </div>
+            </div>
+            <div class="ominous-text delay-5">
+                He knew he wouldn't be alive to explain it.
+            </div>
+        </div>
+
+        <!-- SCENE 4: The Warning -->
+        <div class="scene" id="scene-4">
+            <div class="code-block">
+                <pre class="code-comment">
+<span class="comment-line delay-1">// You trusted the seal.</span>
+<span class="comment-line delay-2">// You trusted the face.</span>
+<span class="comment-line delay-3">// You saw yourself and waved me through.</span>
+<span class="cursor blink">_</span>
+                </pre>
+            </div>
+            <div class="whisper-text delay-4">
+                "They'll clean the files. They won't clean the habits."
+            </div>
+        </div>
+
+        <!-- SCENE 5: Suspect Montage -->
+        <div class="scene" id="scene-5">
+            <div class="suspect-montage">
+                <div class="suspect-flash" data-suspect="rhea"></div>
+                <div class="suspect-flash" data-suspect="mehta"></div>
+                <div class="suspect-flash" data-suspect="ananya"></div>
+                <div class="suspect-flash" data-suspect="kunal"></div>
+            </div>
+            <div class="accusation-overlay">
+                <div class="accusation">Access granted</div>
+                <div class="accusation">Permission assumed</div>
+                <div class="accusation">Credentials reused</div>
+                <div class="accusation">Logs altered</div>
+            </div>
+        </div>
+
+        <!-- SCENE 6: Call to Action -->
+        <div class="scene" id="scene-6">
+            <div class="final-message">
+                <p class="fade-in">He trusted systems.</p>
+                <p class="fade-in delay-1">They trusted him.</p>
+                <p class="fade-in delay-2 emphasis">Now the systems are yours.</p>
+            </div>
+            <button id="enter-button" class="enter-button">
+                ENTER CASE FILE
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Audio elements -->
+    <audio id="ambient" src="assets/audio/ambient_horror.wav" loop></audio>
+    <audio id="heartbeat" src="assets/audio/heartbeat.mp3"></audio>
+    <audio id="glitch" src="assets/audio/glitch.mp3"></audio>
+    <audio id="terminal-buzz" src="assets/audio/terminal_buzz.mp3"></audio>
+    <audio id="click" src="assets/audio/click.mp3"></audio>
+    <audio id="hum" src="assets/audio/hum.mp3"></audio>
+
+    <script src="intro.js"></script>
+</body>
+</html>
