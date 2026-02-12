@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #ad0e0e;
+  font-family: "Courier New", monospace;
+  overflow: hidden;
+}
+
+/* ANALOG HORROR */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle, #080000, #000),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,0,0,0.04),
+      rgba(255,0,0,0.04) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  animation: flicker 6s infinite;
+  z-index: 0;
+  pointer-events: none; /* 🔥 THIS FIXES CLICK ISSUE */
+}
+
+@keyframes flicker {
+  0%,100% { opacity: 0.9; }
+  50% { opacity: 0.7; }
+}
+
+.screen {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ENTER SCREEN */
+#enter-btn {
+  margin-top: 30px;
+  padding: 14px 36px;
+  background: transparent;
+  border: 1px solid #b30000;
+  color: #b30000;
+  cursor: pointer;
+}
+
+#enter-btn:hover {
+  background: #b30000;
+  color: black;
+}
+
+/* SUSPECTS */
+.title {
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
+
+.suspect-row {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.suspect-card {
+  width: 260px;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+
+  filter: grayscale(100%) contrast(1.15);
+  transform: scale(1);
+
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.6s ease,
+    box-shadow 0.6s ease;
+
+  z-index: 3;
+}
+
+
+.suspect-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.suspect-card:hover {
+  transform: scale(1.08);
+  filter: grayscale(20%) brightness(1.1);
+  box-shadow: 0 0 40px rgba(173, 14, 14, 0.25);
+}
+
+
+/* INVESTIGATE */
+#investigate-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 28px;
+  padding: 12px 18px;
+  border: 1px solid #7a0000;
+  color: #ad0e0e;
+  text-decoration: none;
+}

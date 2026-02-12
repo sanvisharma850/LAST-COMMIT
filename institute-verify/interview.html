@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>INTERVIEW FILE</title>
+  <link rel="stylesheet" href="interview.css">
+</head>
+
+<body>
+
+  <!-- Back to suspect selection / files screen -->
+<a href="index.html" onclick="sessionStorage.setItem('fromInterview', 'true')">
+  ← BACK TO FILES
+</a>
+
+
+  <!-- Interview text injected here -->
+  <pre id="interview-text"></pre>
+
+  <!-- Background audio (hidden, autoplay via JS) -->
+  <audio id="bg-audio" loop>
+    <source src="assets/audio/ambient_horror.wav" type="audio/mpeg">
+  </audio>
+
+  <!-- Interview logic -->
+  <script src="interview.js"></script>
+
+</body>
+</html>
