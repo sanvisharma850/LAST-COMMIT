@@ -9,7 +9,11 @@
 
 A narrative-driven cybersecurity investigation challenge incorporating **cyber forensics**, **cryptography**, **network security**, **steganography**, and **incident response** methodologies. Built for ACM TURINGER Tech Fest 2026.
 
-![LAST COMMIT Banner](https://via.placeholder.com/1200x400/0a0a0a/00ff00?text=LAST+COMMIT)
+<p align="center">
+  <img src="readme_figures/Screenshot 2026-02-13 001245.png" width="45%" />
+  <img src="readme_figures/Screenshot 2026-02-13 001328.png" width="45%" />
+</p>
+
 
 ---
 
