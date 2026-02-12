@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gateway</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gateway.css">
+</head>
+
+<body>
+
+  <div class="terminal-container">
+    <div class="flicker-text">
+    </div>
+
+    <div class="riddle-box">
+      <p class="riddle-text">You checked the seal.</p>
+      <p class="riddle-text">You trusted the face.</p>
+      <p class="riddle-text">You saw yourself and waved me through.</p>
+
+      <p class="riddle-text">Mirrors are funny things.</p>
+
+      <div class="options">
+        <button class="choice-btn" onclick="choosePath('A')">Option A: HTTPS</button>
+        <button class="choice-btn" onclick="choosePath('B')">Option B: Man-in-the-Middle</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="gateway.js"></script>
+</body>
+
+</html>

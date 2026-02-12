@@ -249,7 +249,7 @@ function setupFinalButton() {
         // Transition to game
         setTimeout(() => {
             // Replace with your game start function or page redirect
-            window.location.href = 'https://sanvisharma850.github.io/institute-verify/'; // or call startGame()
+            window.location.href = './institute-verify/index.html'; // or call startGame()
         }, 1500);
     });
 }
