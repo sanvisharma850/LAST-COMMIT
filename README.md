@@ -31,7 +31,7 @@ A narrative-driven cybersecurity investigation challenge incorporating **cyber f
 
 ---
 
-## , Cybersecurity Concepts & Tools
+## Cybersecurity Concepts & Tools
 
 ### Core Security Domains
 
